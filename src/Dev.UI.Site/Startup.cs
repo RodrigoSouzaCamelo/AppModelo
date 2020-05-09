@@ -30,6 +30,8 @@ namespace Dev.UI.Site
 
             app.UseRouting();
 
+            app.UseStaticFiles();
+
             app.UseEndpoints(endpoint => 
             {
                 endpoint.MapControllerRoute(
