@@ -1,5 +1,10 @@
+@using Dev.UI.Site.Data
+@inject IPedidoRepository PedidoRepository
+
 @{
     ViewData["Title"] = "Home";
 }
 
 Hello World!
+
+@PedidoRepository.ObterPedido().Id;
